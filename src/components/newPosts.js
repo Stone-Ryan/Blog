@@ -42,7 +42,7 @@ class NewPost extends Component {
         <Field
           name="categories"
           component={this.renderField}
-          label="Catagories"
+          label="Categories"
         />
         <Field
           name="content"
@@ -65,8 +65,8 @@ const validate = values => {
   if (!values.title) {
     errors.title = "Enter a title!"
   }
-  if (!values.catagories) {
-    errors.catagories = "Enter catagories!"
+  if (!values.categories) {
+    errors.categories = "Enter categories!"
   }
   if (!values.content) {
     errors.content = "Enter content!"

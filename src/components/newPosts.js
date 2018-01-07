@@ -5,6 +5,25 @@ import { connect } from 'react-redux';
 
 import { createPost } from '../actions';
 
+const FIELDS = {
+  title: {
+    type: 'input',
+    lable: 'Title',
+    type: 'input'
+  },
+  categories: {
+    type: 'input',
+    label: 'Categories',
+    type: 'input'
+  },
+  content: {
+    type: 'input',
+    label: 'Content',
+    type: 'textarea'
+  }
+}
+
+
 class NewPost extends Component {
   renderField(field) {
     const { touched, error } = field.meta;
